@@ -4,7 +4,7 @@ let input= [
 { "id": 1, "name": "A" }, 
 { "id": 2, "name": "B" } 
 ]; 
-console.log(FilterDublicate(input)); 
+console.log(FilterDuplicate(input)); 
 function FilterDuplicate(){ 
 let Result=[]; 
 let temp=[]; 
@@ -22,4 +22,4 @@ return Result;
 } 
 
 // using filter method.
-console.log(input.set())
+console.log(new Set(input))
