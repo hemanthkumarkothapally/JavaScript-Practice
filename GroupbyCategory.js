@@ -3,7 +3,9 @@ let input=[
 { "item": "B", "category": "y" },
 { "item": "C", "category": "x" }
 ];
-for (let index = 0; index < input.length; index++) {
-    const element = array[index];
-    
-}
+let categories = new Set(input.map(item => item.category));
+console.log(Array.from(categories).map(categorytype=>{
+    let items=input.filter(item => item.category === categorytype)
+    .map(temp=> temp.item)
+    return items
+}))
